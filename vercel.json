@@ -2,7 +2,7 @@
     "redirects":[
         { "source": "/", "destination": "./public/index.html" }
     ],
-    "destination":"/server.js",
+    
      "cleanUrls": true,
      "trailingSlash": false
 
