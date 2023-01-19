@@ -1,8 +1,14 @@
 {
     "version":"1",
-    "build":
+    "builds":[
+        
+            { "src": "*.html", "use": "@vercel/static" },
+            { "src": "*.js", "use": "@vercel/node" }
+    ],
+    "router":[
         {
-            "use":"@vercel/node"
+            "src":"/(.*)",
+            "dest":"./server.js"
         }
-    
+    ]
 }
