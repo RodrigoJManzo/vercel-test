@@ -13,7 +13,7 @@ const app = express()
 const httpServer = new HttpServer(app)
 const io = new SocketIOServer(httpServer)
 
-const PORT = 8080
+const PORT = process.env.PORT || 8080
 
 app.use(express.static("./public"))
 
